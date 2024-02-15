@@ -106,9 +106,16 @@
             <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse</h2>
-              <p class="text-3xl">Area (A) = Pi-ab</p>
+              <p class="text-3xl">Area (A) = π * a * b</p>
+              <div class="flex gap-5">
+                <input type="text" class="w-24 text-2xl p-2 rounded-sm bg-slate-200" id="ellipse-major-radius" placeholder="major">
+                <input type="text" class="w-24 text-2xl p-2 rounded-sm bg-slate-200" name="" id="ellipse-minor-radius" placeholder="minor">
+              </div>
+              <div>
+            <p>Area: <span id="ellipse-area">0</span></p>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -123,5 +130,6 @@
       <script src="scripts/rectangle.js"></script>
       <script src="scripts/parallelogram.js"></script>
       <script src="scripts/pentagon.js"></script>
+      <script src="scripts/ellipse.js"></script>
     </body>
   </html>
